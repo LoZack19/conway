@@ -1,5 +1,5 @@
 CC 		= gcc
-CFLAGS  = -Wall -Wextra -I./ -g -fsanitize=address
+CFLAGS  = -Wall -Wextra -I./ -g
 
 OBJ		= main.o conway.o readfile.o
 TARGET	= conway
