@@ -100,19 +100,19 @@ void free_matrix(char ***matrix, int y)
 
 char** matrixdup(char** src, int y, int x)
 {
-    char** matrix = malloc(y * sizeof(int*));
+    char** matrix = malloc(y * sizeof(char*));
     if (!matrix)
         return NULL;
     
     for (int i = 0; i < y; i++) {
-        matrix[i] = calloc(x, sizeof(int));
+        matrix[i] = calloc(x, sizeof(char));
         if (!matrix) {
             free_matrix(&matrix, i);
             return NULL;
         }
 
 		if (src)
-			memmove(matrix[i], src[i], x * sizeof(int));
+			memmove(matrix[i], src[i], x * sizeof(char));
 		
     }
     return matrix; 

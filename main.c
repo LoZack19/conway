@@ -19,7 +19,7 @@ void help(FILE* stream)
 		  "FLAGS:\n"
 		  "\t-f\tfile where to read the configuration from\n"
 		  "\t\t(default = a.dat)\n"
-		  "\t-i\tnumber of iterations to visualize (default = 1)\n"
+		  "\t-i\tnumber of iterations to visualize (default = 10)\n"
 		  "\t-s\ttenth of seconds to wait between frames (default = 1)\n"
 		  "\n"
 		  "Written by Giovanni Zaccaria - LoZack19\n"
@@ -30,7 +30,7 @@ void help(FILE* stream)
 int main(int argc, char* argv[])
 {
 	char* file = "a.dat";
-	int iterations = 1;
+	int iterations = 10;
 	int dsec = 1;
 
 	for (char c = 0; c != -1; c = getopt(argc, argv, "f:i:s:h")) {
