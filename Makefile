@@ -1,7 +1,7 @@
 CC 		= gcc
 CFLAGS  = -Wall -Wextra -I./ -g
 
-OBJ		= main.o conway.o readfile.o
+OBJ		= main.o src/conway.o src/readfile.o
 TARGET	= conway
 
 .PHONY=all
