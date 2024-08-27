@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <conway.h>
+#include <include/conway.h>
 
 void printmatrix(char** matrix, int y, int x)
 {

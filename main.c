@@ -4,8 +4,8 @@
 #include <unistd.h>
 #include <getopt.h>
 
-#include <conway.h>
-#include <readfile.h>
+#include <include/conway.h>
+#include <include/readfile.h>
 
 #define TIME_UNIT	100000
 

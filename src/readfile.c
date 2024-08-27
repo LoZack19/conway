@@ -5,8 +5,8 @@
 #include <sys/types.h>
 #include <stdlib.h>
 
-#include <conway.h>
-#include <readfile.h>
+#include <include/conway.h>
+#include <include/readfile.h>
 
 char** init_matrix(char* filename, int* _y, int* _x)
 {
